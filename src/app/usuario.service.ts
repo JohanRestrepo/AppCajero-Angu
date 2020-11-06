@@ -17,7 +17,7 @@ export class UsuarioService {
   }
 
   setSaldo(numero): void{
-    this.user.saldo= this.user.saldo + numero
+    this.user.saldo= this.user.saldo - numero
   }
 
 }

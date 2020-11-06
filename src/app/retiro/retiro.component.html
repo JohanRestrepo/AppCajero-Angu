@@ -1,6 +1,5 @@
 <div class="grid grid-pad">
-<a *ngFor="let Option of Options" class="col-1-2"
-    routerLink="">
+<a *ngFor="let Option of Options" class="col-1-2" (click)="Retiro(Option)">
   <div class="module">
     <h4>{{Option}}</h4>
   </div>
