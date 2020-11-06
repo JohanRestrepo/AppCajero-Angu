@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UsuarioService } from '../usuario.service';
+import { Usuario } from '../usuarios';
 
 @Component({
   selector: 'app-resultado-fallido',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resultado-fallido.component.css']
 })
 export class ResultadoFallidoComponent implements OnInit {
+  User: Usuario;
+  constructor(private UserService: UsuarioService) { }
 
-  constructor() { }
+  getUsuarios(): void {
+    this.User = this.UserService.getUsuarios();
+  }
 
   ngOnInit(): void {
+    this.getUsuarios(); 
   }
 
 }
