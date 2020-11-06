@@ -20,11 +20,11 @@ export class RetiroComponent implements OnInit {
 
   Retiro(value): void{
     if(value <= this.User.saldo){
-      this.UserService.setSaldo(value);
-      this.router.navigateByUrl('/ResEx')
+      this.UserService.RetirarSaldo(value);
+      this.router.navigateByUrl('/ResEx');
     }
     else{
-
+      this.router.navigateByUrl('/ResFail');
     }
   }
 

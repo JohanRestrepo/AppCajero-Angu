@@ -1,0 +1,20 @@
+<div class="grid grid-pad">
+    <a *ngFor="let Option of Options" class="col-1-2" (click)="Consignacion(Option)">
+      <div class="module">
+        <h4>{{Option}}</h4>
+      </div>
+    </a>
+    
+    <a class="col-1-2" routerLink="/Main">
+      <div class="module">
+        <h4>Cancelar</h4>
+      </div>
+    </a>
+    
+    <a class="col-1-2" routerLink="">
+        <div class="module">
+          <h4>valor especifico</h4>
+        </div>
+      </a>
+    
+    </div>
