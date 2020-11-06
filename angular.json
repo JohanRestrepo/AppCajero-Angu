@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cajero-angu"
+    }
+  },
+  "defaultProject": "cajero-angu",
+  "cli": {
+    "analytics": "58b19e30-7f2c-4ef1-a896-8317a8c5930d"
+  }
 }

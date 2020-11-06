@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Usuario } from './usuarios';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cajero-angu';
+  title = 'Cajero automatico Banca Johan';
+  
 }
