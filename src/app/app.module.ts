@@ -9,6 +9,8 @@ import { ResultadoExitosoComponent } from './resultado-exitoso/resultado-exitoso
 import { RetiroComponent } from './retiro/retiro.component';
 import { ConsignacionComponent } from './consignacion/consignacion.component';
 import { ResultadoFallidoComponent } from './resultado-fallido/resultado-fallido.component';
+import { RetiroEspComponent } from './retiro-esp/retiro-esp.component';
+import { ConsignacionEspComponent } from './consignacion-esp/consignacion-esp.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ResultadoFallidoComponent } from './resultado-fallido/resultado-fallido
     ResultadoExitosoComponent,
     RetiroComponent,
     ConsignacionComponent,
-    ResultadoFallidoComponent
+    ResultadoFallidoComponent,
+    RetiroEspComponent,
+    ConsignacionEspComponent
   ],
   imports: [
     BrowserModule,

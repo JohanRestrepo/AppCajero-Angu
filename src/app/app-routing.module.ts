@@ -6,6 +6,8 @@ import { ResultadoExitosoComponent } from './resultado-exitoso/resultado-exitoso
 import { RetiroComponent } from './retiro/retiro.component';
 import { ConsignacionComponent } from './consignacion/consignacion.component';
 import { ResultadoFallidoComponent } from './resultado-fallido/resultado-fallido.component';
+import { ConsignacionEspComponent } from './consignacion-esp/consignacion-esp.component';
+import { RetiroEspComponent } from './retiro-esp/retiro-esp.component';
 
 const routes: Routes = [
   { path: 'Main', component: ManuPrinciComponent },
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: 'Retiro', component: RetiroComponent },
   { path: 'Consignar', component: ConsignacionComponent },
   { path: 'ResFail', component: ResultadoFallidoComponent },
+  { path: 'Consignaesp', component: ConsignacionEspComponent },
+  { path: 'Retiroesp', component: RetiroEspComponent },
   { path: '', redirectTo: '/Main', pathMatch: 'full' },
 ];
 
