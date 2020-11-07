@@ -1,1 +1,22 @@
-<p>consignacion-esp works!</p>
+<div *ngIf="noValue">
+    <h1>Por favor ingresa un valor</h1>
+    </div>
+    <div *ngIf="noNumero">
+      <h1>El valor debe ser numerico</h1>
+      </div>
+    
+    <input class="Campo" #valor placeholder="Valor a consignar">
+
+    <div class="grid grid-pad">
+    <a class="col-1-2" routerLink="/Main">
+        <div class="module">
+          <h4>Cancelar</h4>
+        </div>
+      </a>
+      
+      <a class="col-1-2" (click)="Consignacion(valor.value)">
+          <div class="module">
+            <h4>Aceptar</h4>
+          </div>
+    </a>
+    </div>
